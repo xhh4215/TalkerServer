@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="@localhost">
+<dataSource name="ITalk_DB@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.15">
     <root id="1">
       <ServerVersion>5.7.25</ServerVersion>
@@ -7,10 +7,10 @@
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <DefaultCasing>mixed/mixed</DefaultCasing>
     </root>
-    <schema id="2" parent="1" name="DataTest">
+    <schema id="2" parent="1" name="ITalk_DB">
       <Current>1</Current>
       <Visible>1</Visible>
-      <Collation>latin1_swedish_ci</Collation>
+      <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="3" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
@@ -912,124 +912,5 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="229" parent="2" name="S"/>
-    <table id="230" parent="2" name="Student"/>
-    <table id="231" parent="2" name="userinfo"/>
-    <view id="232" parent="2" name="cs_student">
-      <SourceTextLength>187</SourceTextLength>
-      <Definer>root@%</Definer>
-    </view>
-    <column id="233" parent="229" name="Sno">
-      <Position>1</Position>
-      <DataType>char(3)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="234" parent="229" name="Sname">
-      <Position>2</Position>
-      <DataType>char(30)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="235" parent="229" name="Status">
-      <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="236" parent="229" name="City">
-      <Position>4</Position>
-      <DataType>char(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="237" parent="229" name="Zap">
-      <Position>5</Position>
-      <DataType>char(30)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="238" parent="229" name="SS">
-      <ColNames>Sno</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
-    <index id="239" parent="229" name="Sno">
-      <ColNames>Sno</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
-    <index id="240" parent="229" name="Sname">
-      <ColNames>Sname</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
-    <key id="241" parent="229" name="SS">
-      <ColNames>Sno</ColNames>
-      <UnderlyingIndexName>SS</UnderlyingIndexName>
-    </key>
-    <key id="242" parent="229" name="Sno">
-      <ColNames>Sno</ColNames>
-      <UnderlyingIndexName>Sno</UnderlyingIndexName>
-    </key>
-    <key id="243" parent="229" name="Sname">
-      <ColNames>Sname</ColNames>
-      <UnderlyingIndexName>Sname</UnderlyingIndexName>
-    </key>
-    <column id="244" parent="230" name="Sno">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="245" parent="230" name="Sname">
-      <Position>2</Position>
-      <DataType>char(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="246" parent="230" name="Sage">
-      <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="247" parent="230" name="Sex">
-      <Position>4</Position>
-      <DataType>char(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="248" parent="231" name="id">
-      <Position>1</Position>
-      <DataType>int(10)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="249" parent="231" name="username">
-      <Position>2</Position>
-      <DataType>varchar(45)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="250" parent="231" name="password">
-      <Position>3</Position>
-      <DataType>varchar(45)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="251" parent="231" name="age">
-      <Position>4</Position>
-      <DataType>int(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="252" parent="231" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="253" parent="232" name="Sname">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-    </column>
-    <column id="254" parent="232" name="Sage">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-    </column>
-    <column id="255" parent="232" name="Sex">
-      <Position>3</Position>
-      <DataType>char(100)|0s</DataType>
-    </column>
   </database-model>
 </dataSource>
