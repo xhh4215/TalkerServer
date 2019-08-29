@@ -1,6 +1,4 @@
 package com.xiaohei.web.italker.push;
-
-import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 import com.xiaohei.web.italker.push.provider.GsonProvider;
 import com.xiaohei.web.italker.push.service.AccountService;
 import org.glassfish.jersey.server.ResourceConfig;
