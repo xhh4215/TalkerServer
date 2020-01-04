@@ -42,11 +42,9 @@ public class UserFactory {
         String newToken = UUID.randomUUID().toString();
         newToken = TextUtil.encodeBase64(newToken);
         user.setToken(newToken);
-        return Hib.query(session -> {session.saveOrUpdate(user);
-        return user;
-        });
+        return  update(user);
     }
-   private static  User createUser(String account,String password,String name){
+    private static  User createUser(String account,String password,String name){
        User user = new User();
        user.setName(name);
        user.setPassword(password);
@@ -56,7 +54,7 @@ public class UserFactory {
           return user; }
       );
    }
- public static User bindPushId(User user,String pushId){
+    public static User bindPushId(User user,String pushId){
         if (Strings.isNullOrEmpty(pushId)){
             return  null;
         }
@@ -78,8 +76,7 @@ public class UserFactory {
                 // todo 推送一个推出的消息
             }
             user.setPushId(pushId);
-            return Hib.query(session -> {session.saveOrUpdate(user);
-                return user; });
+          return update(user);
         }
  }
     private static String encodePassword(String password) {
@@ -87,7 +84,6 @@ public class UserFactory {
         password = TextUtil.getMD5(password);
         return TextUtil.encodeBase64(password);
     }
-
     public static User foundByPhone(String phone) {
         return Hib.query(session -> {
             User user = (User) session.createQuery("from User where phone = :inPhone")
@@ -95,7 +91,6 @@ public class UserFactory {
             return user;
         });
     }
-
     public static User foundByToken(String token) {
         return Hib.query(session -> {
             User user = (User) session.createQuery("from User where token = :token")
@@ -107,6 +102,12 @@ public class UserFactory {
         return Hib.query(session -> {
             User user = (User) session.createQuery("from User where name = :name")
                     .setParameter("name", name).uniqueResult();
+            return user;
+        });
+    }
+    public static User update(User user){
+       return  Hib.query(session -> {
+            session.saveOrUpdate(user);
             return user;
         });
     }

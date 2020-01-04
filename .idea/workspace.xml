@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b42b39-e120-4a76-abc9-a64f2bd4d8a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/api/account/LoginModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/AuthRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/TalkerServer.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/TalkerServer.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/card/UserCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/card/UserCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/db/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/db/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/factory/UserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/factory/UserFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/TalkerServer-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/TalkerServer-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/db/UserFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/db/UserFollow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/card/UserCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/card/UserCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/db/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/db/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/UserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/AccountService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -374,18 +383,9 @@
       <workItem from="1566135169183" duration="2798000" />
       <workItem from="1566307585681" duration="1853000" />
       <workItem from="1566621894483" duration="8827000" />
-      <workItem from="1578013146630" duration="15238000" />
+      <workItem from="1578013146630" duration="20106000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />

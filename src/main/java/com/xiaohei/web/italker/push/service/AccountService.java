@@ -17,7 +17,7 @@ import javax.ws.rs.core.MediaType;
  */
 // 127.0.0.1/api/account/...
 @Path("/account")
-public class AccountService {
+public class AccountService extends BaseService {
 
     // 登陆
     @POST
@@ -79,16 +79,13 @@ public class AccountService {
     // 指定请求与返回的相应体为JSON
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public ResponseModel<AccountRspModel> bind(@HeaderParam("token") String token ,@PathParam("pushId") String pushId) {
-        if(Strings.isNullOrEmpty(token)|| Strings.isNullOrEmpty(pushId)){
+    public ResponseModel<AccountRspModel> bind(@PathParam("pushId") String pushId) {
+        if( Strings.isNullOrEmpty(pushId)){
             return ResponseModel.buildParameterError();
         }
-        User user = UserFactory.foundByToken(token);
-        if (user!=null){
-          return bind(user,pushId);
-        }else{
-            return ResponseModel.buildAccountError();
-        }
+//        User user = UserFactory.foundByToken(token);
+        User self = getSelf();
+        return bind(self,pushId);
     }
 
     private ResponseModel<AccountRspModel> bind(User self,String pushId){
