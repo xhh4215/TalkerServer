@@ -24,6 +24,9 @@ public class UserCard {
     private int follows;
     @Expose
     private boolean isFollow;
+    @Expose
+    private int following;
+
     public UserCard(final User user) {
         this(user,false);
 
@@ -128,6 +131,5 @@ public class UserCard {
         this.following = following;
     }
 
-    @Expose
-    private int following;
+
 }

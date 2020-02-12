@@ -10,6 +10,10 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven{
+      name "getui-nexus"
+        url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/"
+    }
 }
 
 dependencies {
@@ -18,8 +22,10 @@ dependencies {
     // Guava java 类封装
     compile 'com.google.guava:guava:21.0'
 
+    compile 'com.gexin.platform:gexin-rp-sdk-http:4.1.0.5'
+
     // Jersey 轻量级Restful接口框架
-    compile 'org.glassfish.jersey.core:jersey-client:2.26-b03'
+     'org.glassfish.jersey.core:jersey-client:2.26-b03'
     compile 'org.glassfish.jersey.core:jersey-server:2.26-b03'
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.26-b03'
     // 也是一个 Json 解析库

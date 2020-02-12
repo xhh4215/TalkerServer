@@ -11,19 +11,13 @@
         <property name="connection.url">jdbc:mysql://127.0.0.1:3306/ITalk_DB_XH?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false</property>
         <property name="connection.username">root</property>
         <property name="connection.password">xh123123</property>
-
         <!--<property name="connection.url">jdbc:mysql://qiujuer.net:6968/DB_I_T_PUSH?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false</property>-->
-
-
         <!-- JDBC 链接池大小 -->
         <property name="connection.pool_size">5</property>
-
         <!-- SQL 方言 -->
         <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
-
         <!-- Hibernate session 上下文为线程级别 -->
         <property name="current_session_context_class">thread</property>
-
         <!-- 配置C3P0缓存链接池  -->
         <property name="cache.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
         <!--在连接池中可用数据库连接的最小数目-->

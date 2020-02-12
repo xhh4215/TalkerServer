@@ -2,12 +2,16 @@ package com.xiaohei.web.italker.push.factory;
 
 import com.google.common.base.Strings;
 import com.xiaohei.web.italker.push.bean.db.User;
+import com.xiaohei.web.italker.push.bean.db.UserFollow;
 import com.xiaohei.web.italker.push.utils.Hib;
 import com.xiaohei.web.italker.push.utils.TextUtil;
 import org.hibernate.Session;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 
 /**
@@ -51,7 +55,8 @@ public class UserFactory {
        user.setPhone(account);
        return  Hib.query(session ->{
           session.save(user);
-          return user; }
+          return user;
+       }
       );
    }
     public static User bindPushId(User user,String pushId){
@@ -105,6 +110,9 @@ public class UserFactory {
             return user;
         });
     }
+    public static User foundById(String id) {
+        return Hib.query(session ->  session.get(User.class,id));
+    }
     public static User update(User user){
        return  Hib.query(session -> {
             session.saveOrUpdate(user);
@@ -112,4 +120,82 @@ public class UserFactory {
         });
     }
 
+    /***
+     * 获取我的联系人的列表
+     * @param self user
+     * @return
+     */
+    public static List<User>  constacts(User self){
+         return Hib.query(session -> {
+             session.load(self,self.getId());
+             Set<UserFollow>  follows= self.getFollowing();
+             return follows.stream()
+                     .map(UserFollow::getTarget)
+                     .collect(Collectors.toList());
+         });
+    }
+
+    /****
+     * 关注一个人的操作
+     * @param origin 发起者
+     * @param target 被关注者
+     * @param alias  备注名
+     * @return 被关注人的信息
+     */
+    public static User follow(final User origin,final User target,final String alias){
+      UserFollow follow= getUserFollow(origin,target);
+      if (follow!=null){
+          return follow.getTarget();
+      }
+
+       return  Hib.query(session -> {
+           session.load(origin,origin.getId());
+           session.load(target,target.getId());
+           UserFollow originFollow = new UserFollow();
+           originFollow.setOrigin(origin);
+           originFollow.setTarget(target);
+           originFollow.setAlias(alias);
+
+
+           UserFollow targetFollow = new UserFollow();
+           targetFollow.setOrigin(target);
+           targetFollow.setTarget(origin);
+           session.save(originFollow);
+           session.save(targetFollow);
+           return target;
+       });
+
+
+   }
+
+    /***
+     * 查询两个人是否已经关注
+     * @param origin 发起者
+     * @param target 被关注者
+     * @return
+     */
+    public static UserFollow getUserFollow(final User origin,final User target){
+      return Hib.query(session -> (UserFollow) session.createQuery("from UserFollow  where originId = :originId and targetId=:targetId")
+              .setParameter("originId",origin.getId())
+              .setParameter("targetId",target.getId())
+              .setMaxResults(1)
+              .uniqueResult());
+   }
+
+
+    public static List<User> search(String name) {
+        if (Strings.isNullOrEmpty(name))
+         name = ""; // 保证不能为null的情况，减少后面的一下判断和额外的错误
+         final String searchName = "%" + name + "%"; // 模糊匹配
+        return Hib.query(session -> {
+        // 查询的条件：name忽略大小写，并且使用like（模糊）查询；
+        // 头像和描述必须完善才能查询到
+        return (List<User>) session.createQuery("from User where lower(name) like :name and portrait is not null and description is not null")
+                .setParameter("name", searchName)
+                .setMaxResults(20) // 至多20条
+                .list();
+
+    });
+
+}
 }

@@ -40,8 +40,6 @@ public class AccountService extends BaseService {
            return ResponseModel.buildLoginError();
        }
     }
-
-
     // 注册
     @POST
     @Path("/register")
@@ -72,7 +70,6 @@ public class AccountService extends BaseService {
             return ResponseModel.buildRegisterError();
         }
     }
-
     // 绑定
     @POST
     @Path("/bind/{pushId}")
@@ -87,7 +84,6 @@ public class AccountService extends BaseService {
         User self = getSelf();
         return bind(self,pushId);
     }
-
     private ResponseModel<AccountRspModel> bind(User self,String pushId){
       User  user =   UserFactory.bindPushId(self,pushId);
         if (user==null) {
