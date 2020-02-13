@@ -1,5 +1,6 @@
 package com.xiaohei.web.italker.push.bean.db;
 
+import com.xiaohei.web.italker.push.bean.api.message.MessageCreateModel;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -14,8 +15,12 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "TB_MESSAGE")
 public class Message {
+    // 发送给人
+    public static final int RECEIVER_TYPE_NONE = 1;
+    // 发送给群
+    public static final int RECEIVER_TYPE_GROUP = 2;
     public static final int TYPE_STR = 1; // 字符串类型
-    public static final int TYPE_PIC = 1; // 图片类型
+    public static final int TYPE_PIC = 2; // 图片类型
     public static final int TYPE_FILE = 3; // 文件类型
     public static final int TYPE_AUDIO = 4; // 语音类型
 
@@ -83,7 +88,36 @@ public class Message {
     @Column(updatable = false, insertable = false)
     private String groupId;
 
+    public Message() {
+    }
 
+    /***
+     * 普通朋友发送的构造函数
+     * @param receiver
+     * @param sender
+     * @param model
+     */
+    public Message(User sender, User receiver, MessageCreateModel model){
+      this.id = model.getId();
+      this.attach = model.getAttach();
+      this.content = model.getContent();
+      this.type = model.getType();
+      this.sender = sender;
+      this.receiver = receiver;
+    } /***
+     * 群发送的构造函数
+     * @param receiver
+     * @param sender
+     * @param model
+     */
+    public Message(User sender, Group receiver, MessageCreateModel model){
+        this.id = model.getId();
+        this.attach = model.getAttach();
+        this.content = model.getContent();
+        this.type = model.getType();
+        this.sender = sender;
+        this.group = receiver;
+    }
     public String getId() {
         return id;
     }

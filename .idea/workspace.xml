@@ -2,44 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b42b39-e120-4a76-abc9-a64f2bd4d8a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/api/base/PushModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/card/ApplyCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/card/GroupCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/card/GroupMemberCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/card/MessageCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/utils/PushDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/api/message/MessageCreateModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/GroupFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/MessageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/PushFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/MessageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/337934ba-f35a-4f97-82b2-e7f594e3b917.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/337934ba-f35a-4f97-82b2-e7f594e3b917/storage_v2/_src_/schema/ITalk_DataBase.JRaU9A.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f198d733-2f54-4c79-80ea-f9ebf563a1ec.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ffbe5cf1-f663-40ff-a966-7f4fc46a5e99.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/TalkerServer.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/TalkerServer.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/card/UserCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/card/UserCard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/factory/UserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/factory/UserFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/provider/GsonProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/provider/GsonProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/service/AuthRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/service/AuthRequestFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/db/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/db/Message.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/utils/Hib.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/utils/Hib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/utils/TextUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/utils/TextUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/utils/PushDispatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/utils/PushDispatcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/TalkerServer-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/TalkerServer-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/card/UserCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/card/UserCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/UserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/db/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/db/Message.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -445,7 +425,7 @@
       <workItem from="1581414217301" duration="1098000" />
       <workItem from="1581419481571" duration="65000" />
       <workItem from="1581419572788" duration="8025000" />
-      <workItem from="1581477120835" duration="852000" />
+      <workItem from="1581477120835" duration="9244000" />
     </task>
     <servers />
   </component>
