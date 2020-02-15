@@ -98,8 +98,7 @@ public class PushFactory {
                PushModel model = new PushModel();
                model.add(pushhistory.getEntityType(),pushhistory.getEntity());
                dispatcher.add(receiver,model);
-
-           Hib.queryOnly(session ->{
+               Hib.queryOnly(session ->{
                for (PushHistory history : histories) {
                    session.saveOrUpdate(history);
                }

@@ -52,7 +52,7 @@ public class MessageService extends BaseService {
      * @return
      */
     private ResponseModel<MessageCard> pushToUser(User sender, MessageCreateModel model) {
-        User receiver = UserFactory.foundById(model.getId());
+        User receiver = UserFactory.foundById(model.getReceiverId());
         if (receiver==null){
             return ResponseModel.buildNotFoundUserError("can't find receiver");
         }

@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b42b39-e120-4a76-abc9-a64f2bd4d8a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/api/message/MessageCreateModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/GroupFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/MessageFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/PushFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/MessageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,11 +10,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/db/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/db/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/api/message/MessageCreateModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/bean/api/message/MessageCreateModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/factory/GroupFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/factory/GroupFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/factory/PushFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/factory/PushFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/service/MessageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/utils/PushDispatcher$BatchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/utils/PushDispatcher$BatchBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/utils/PushDispatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xiaohei/web/italker/push/utils/PushDispatcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/TalkerServer-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/TalkerServer-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/db/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/db/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/api/message/MessageCreateModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/api/message/MessageCreateModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/PushFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/PushFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/utils/PushDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/utils/PushDispatcher.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,11 +135,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push" />
       <recent name="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/api/base" />
       <recent name="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/bean/card" />
       <recent name="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/service" />
       <recent name="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/provider" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -153,6 +155,32 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.24">
+    <configuration name="AppPush" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xiaohei.web.italker.push.utils.AppPush" />
+      <module name="TalkerServer.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaohei.web.italker.push.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatchPushDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xiaohei.web.italker.push.utils.MyBatchPushDemo" />
+      <module name="TalkerServer.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaohei.web.italker.push.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TalkerServer [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -383,6 +411,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyBatchPushDemo" />
+        <item itemvalue="Application.AppPush" />
         <item itemvalue="Gradle.TalkerServer [dependencies]" />
       </list>
     </recent_temporary>
@@ -425,7 +455,8 @@
       <workItem from="1581414217301" duration="1098000" />
       <workItem from="1581419481571" duration="65000" />
       <workItem from="1581419572788" duration="8025000" />
-      <workItem from="1581477120835" duration="9244000" />
+      <workItem from="1581477120835" duration="16115000" />
+      <workItem from="1581671726989" duration="7638000" />
     </task>
     <servers />
   </component>
@@ -444,6 +475,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/PushFactory.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xiaohei/web/italker/push/factory/PushFactory.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TalkerServer$locahost.ic" NAME="locahost Coverage Results" MODIFIED="1566308137190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

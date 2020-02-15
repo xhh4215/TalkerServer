@@ -2,7 +2,6 @@ package com.xiaohei.web.italker.push.bean.api.message;
 
 import com.google.common.base.Strings;
 import com.google.gson.annotations.Expose;
-import com.xiaohei.web.italker.push.bean.api.user.UpdateInfoModel;
 import com.xiaohei.web.italker.push.bean.db.Message;
 
 /***
@@ -79,8 +78,8 @@ public class MessageCreateModel {
     public static boolean check(MessageCreateModel model) {
         // Model 不允许为null，
         // 并且只需要具有一个及其以上的参数即可
-        return model!=null &&
-                !(Strings.isNullOrEmpty(model.id)
+        return model!=null
+                && !(Strings.isNullOrEmpty(model.id)
                 ||Strings.isNullOrEmpty(model.content)
                 ||Strings.isNullOrEmpty(model.receiverId))
                 && (model.receiverType==Message.RECEIVER_TYPE_NONE|| model.receiverType == Message.RECEIVER_TYPE_GROUP)
